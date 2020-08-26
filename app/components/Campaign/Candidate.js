@@ -4,14 +4,17 @@ class Candidate extends React.Component {
     render() {
         return (
             <div class="card text-center">
-
+                <div class="card-header">
+                    Candidate &nbsp; {this.props.number}
+                </div>
                 <div class="card-body">
-                    <h5 class="card-title">Obama</h5>
+                    <h5 class="card-title">{this.props.name}</h5>
                     <a class="btn btn-primary">Vote</a>
                 </div>
 
                 <div class="card-footer text-muted">
-                    <span>52%</span><p>991/1.8k</p>
+                    <span>{this.props.percentage}%</span>
+                    <p>{this.props.numOfVote}/{this.props.totalVote}</p>
                 </div>
 
             </div>

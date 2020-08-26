@@ -10,11 +10,22 @@ class Campaign extends React.Component {
                 </div>
 
                 <div>
-                    <Candidate/>
+                    <Candidate
+                        number="1"
+                        name="Donald Trump"
+                        percentage="52"
+                        numOfVote="991"
+                        totalVote="1800"
+                    />
+                    <Candidate
+                        number="2"
+                        name="Joe Biden"
+                        percentage="52"
+                        numOfVote="991"
+                        totalVote="1800"
+                    />
                 </div>
-
             </div>
-
         )
     }
 }
